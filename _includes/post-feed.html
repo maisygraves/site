@@ -1,0 +1,10 @@
+{% for post in site.posts %}
+    <div class="post-card">
+        <a class="post-card-link" href="{{ post.url | relative_url }}">
+            <div class="post-card-header">
+                <p class="post-card-date">{{ post.date | date: "%m.%d.%y" }}</p>
+                <p class="post-card-title">{{ post.title }} →</p>
+            </div>
+        </a>
+    </div>
+{% endfor %}

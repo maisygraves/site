@@ -1,0 +1,6 @@
+- name: projects
+  link: https://github.com/maisygraves
+  icon: ./assets/img/GitHub.svg
+- name: resume
+  link: https://www.linkedin.com/in/maigraves
+  icon: ./assets/img/LinkedIn.svg

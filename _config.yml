@@ -1,0 +1,14 @@
+# default configurations ...
+# https://jekyllrb.com/docs/configuration/default/
+
+# site settings
+title: Maisy Graves
+description: A collection of my documented projects and reflective write-ups.
+url: "https://yourusername.github.io"
+baseurl: "/website"
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"

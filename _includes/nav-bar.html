@@ -1,0 +1,9 @@
+{% for item in site.data.navigation_bar %}
+
+<a href="{{ item.link | relative_url }}">
+    <div>
+        <img src="{{ item.icon | relative_url }}" alt="{{ item.name }}">
+    </div>
+</a>
+
+{% endfor %}

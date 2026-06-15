@@ -1,0 +1,56 @@
+---
+title: home
+---
+
+<nav>
+    {% include nav-bar.html %}
+</nav>
+
+<main>
+    <section class="intro">
+        <h1>{{ site.title }}</h1>
+        <p>{{ site.description }}</p>
+    </section>
+
+    <div class="home-grid">
+        <section class="posts-column">
+            <div class="posts-feed">
+                {% include post-feed.html %}
+            </div>
+        </section>
+
+        <section class="coursework">
+            <h4>Selected project materials are password-protected.</h4>
+
+            <div id="coursework-lock">
+                <div class="coursework-form">
+                    <input id="coursework-password" type="password" placeholder="password">
+                    <button onclick="unlockCoursework()">enter</button>
+                </div>
+                <p id="coursework-error"></p>
+            </div>
+
+            <div id="coursework-projects">
+                <div class="coursework-project">
+                    <p>Google Drive →</p>
+                    <a href="https://drive.google.com/drive/folders/1b2ToK1ix11uhIlvV3UckJZXdB5Beanwv" target="'_blank">view project →</a>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+<script>
+    function unlockCoursework() {
+        const password = document.getElementById("coursework-password").value;
+        const projects = document.getElementById("coursework-projects");
+        const error = document.getElementById("coursework-error");
+
+        if (password === "graves") {
+            projects.style.display = "block";
+            document.getElementById("coursework-lock").style.display = "none";
+        } else {
+            error.textContent = "hmm, try again.";
+        }
+    }
+</script>

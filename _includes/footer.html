@@ -1,0 +1,15 @@
+<footer>
+
+    <div class="footer-socials">
+        {% for item in site.data.navigation_bar %}
+            <a href="{{ item.link }}" target="_blank" rel="noopener">
+                <img src="{{ item.icon | relative_url }}" alt="{{ item.name }}">
+            </a>
+        {% endfor %}
+    </div>
+
+    <p class="footer-copyright">© {{ site.time | date: "%Y" }} {{ site.title }}</p>
+
+    <div class="footer-spacer"></div>
+
+</footer>
