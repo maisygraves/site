@@ -5,7 +5,7 @@
 title: Maisy Graves
 description: A collection of my documented projects and reflective write-ups.
 url: "https://yourusername.github.io"
-baseurl: "/website"
+baseurl: "./site"
 
 defaults:
   - scope:
