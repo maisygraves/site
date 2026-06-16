@@ -4,8 +4,8 @@
 # site settings
 title: Maisy Graves
 description: A collection of my documented projects and reflective write-ups.
-url: "https://yourusername.github.io"
-baseurl: "/website"
+url: "https://maisygraves.github.io"
+baseurl: "/site"
 
 defaults:
   - scope:
